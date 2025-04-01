@@ -5,4 +5,3 @@ from .serializers import HistoriaClinicaSerializer
 class HistoriaClinicaViewSet(viewsets.ModelViewSet):
     queryset = HistoriaClinica.objects.all()
     serializer_class = HistoriaClinicaSerializer
-
