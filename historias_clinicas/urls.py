@@ -6,5 +6,5 @@ router = DefaultRouter()
 router.register(r'historias', HistoriaClinicaViewSet)
 
 urlpatterns = [
-    path('api/', include(router.urls)),
+    path('api/historias_clinicas/', include(router.urls)),
 ]
