@@ -6,7 +6,7 @@ from django.db import models
 class HistoriaClinica(models.Model):
     nombre_paciente = models.CharField(max_length=255)
     edad = models.CharField(max_length=10)
-    identificacion = models.CharField(max_length=50, unique=True)
+    identificacion = models.CharField(max_length=50, unique=True, primary_key=True)
     procedencia = models.CharField(max_length=255)
     ocupacion = models.CharField(max_length=255)
     acompanante = models.CharField(max_length=255, blank=True, null=True)
